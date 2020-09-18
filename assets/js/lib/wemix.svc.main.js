@@ -23,7 +23,6 @@
             me.setChangeText()
             me.clickChangeLocale();
             me.clickAppDownload();
-            me.clickBrowserDismiss();
         },
         // -------------------------------------------
         // 선택된 언어
@@ -88,12 +87,12 @@
 
             var me = this;
 
-            $('body').on("click", ".new__link.apple", function (e) {
+            $('body').on("click", ".apple", function (e) {
                 var $self = $(this);
                 goDownLink('apple')
             });
 
-            $('body').on("click", ".new__link.google", function (e) {
+            $('body').on("click", ".google", function (e) {
                 var $self = $(this);
                 goDownLink('google')
             });
@@ -105,31 +104,7 @@
                     alert('앱스토어 다운로드 주소를 넣어야 합니다.');
                 }
             }
-        },
-        // -------------------------------------------
-        // PC 버전 브라우저 크롬 사용 안내 닫기
-        // -------------------------------------------
-        clickBrowserDismiss: function () {
-            alert(WEMIX.Utils.browser.isExplorer())
-
-            if(WEMIX.Utils.browser.isExplorer() && WEMIX.Utils.browser.deviceType == 'pc') {
-                setTimeout(function () {
-                    $('#chr-download-button').addClass('show');
-                    $('#chr-download-button').on('click', function () {
-                        WEMIX.Utils.newOpenUrl('https://www.google.com/intl/ko_ALL/chrome/', '_blank');
-                    });
-                }, 2000)
-                $('.browser-banner').css('display', 'block');
-                $('.main_header .ani_fixed').addClass('browser-help');
-                $('.store-container').addClass('browser-help');
-            }
-
-            $('.browser-banner-dismiss').on('click', function () {
-                $('.browser-banner').css('display', 'none');
-                $('.main_header .ani_fixed').removeClass('browser-help');
-                $('.store-container').removeClass('browser-help');
-            });
-        },
+        }
     })
 
 })(jQuery);

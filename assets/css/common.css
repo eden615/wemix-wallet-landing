@@ -218,18 +218,24 @@ footer p {
   /* background: linear-gradient(235deg, #68cdfb, #1490d3); */
   background: #8e8e8e;
   color: #333;
-  padding: 10px;
+  width: 45px;
+  height: 45px;
   font-size: 28px;
   border-radius: 12px;
+  text-align: center;
+  line-height: 45px;
 }
 
 .footer__social .footer__social-medium {
   background: #8e8e8e;
   color: #333;
-  padding: 10px;
-  margin: 0 5px;
+  width: 45px;
+  height: 45px;
   font-size: 28px;
   border-radius: 12px;
+  text-align: center;
+  line-height: 45px;
+  margin: 0 5px;
 }
 
 /* info */
