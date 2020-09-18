@@ -15,10 +15,10 @@
 	};
 
 	LANGUAGE.Home = {
-		setction_01_title: m("자산을 관리하고, 게임을 즐기고, 토근을 획득하고."),
-		setction_01_title_02: m("게임을 즐기고 토큰을 획득하자."),
+		setction_01_title: m("게임을 즐기고 토큰과 NFT를 획득하자."),
+		setction_01_title_02: m("획득한 토큰과 NFT를 관리하자"),
 		setction_01_title_03: m("게임까지 확장하는 블록체인 지갑."),
-		setction_01_title_04: m("게임 자산? 전자 화폐?\n한 번에 관리하세요."),
+		setction_01_title_04: m("게임 자산? 암호화폐? 한번에 관리하세요."),
 		setction_01_emphasize: m("다양하고 검증된 높은 퀄리티의 게임."),
 		setction_01_desc: m("App 형태의 게임들과 비교해도 전혀 손색이 없는 높은 퀄리티의 DApp 게임을 제공합니다. 게임을 플레이하고 보상으로 획득한 디지털 자산을 지갑에서 한꺼번에 관리할 수 있습니다."),
 		setction_02_title: m("점점 늘어나는 디지털 자산을 관리하고 싶다면?"),
