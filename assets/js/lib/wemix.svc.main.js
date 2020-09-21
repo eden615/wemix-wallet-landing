@@ -20,7 +20,7 @@
 
             me.$local = WEMIX._globalMyLanguage();
             me.setCurrentLanguage();
-            me.setChangeText()
+            me.setChangeMainText()
             me.clickChangeLocale();
             me.clickAppDownload();
         },
@@ -28,14 +28,16 @@
         // 선택된 언어
         // -------------------------------------------
         setCurrentLanguage: function () {
-            $("html").attr("lang", localStorage.getItem('APP.locale'));
-            $("body").attr("class", localStorage.getItem('APP.locale'));
-            $('a[data-locale="' + localStorage.getItem('APP.locale') + '"]').addClass('selected');
+            var locale = localStorage.getItem('APP.locale')
+            $("html").attr("lang", locale.split('-')[0]);
+            $("body").attr("class", locale.split('-')[0]);
+            $('a[data-locale="' + locale + '"]').addClass('selected');
+            $('.locale__language').html(LANGUAGE.Global['locale_' + locale.replace("-", "_")]());
         },
         // -------------------------------------------
         // 문구 변경
         // -------------------------------------------
-        setChangeText() {
+        setChangeMainText() {
             var me = this;
             me.$textChangeValue = 1;
 
@@ -53,13 +55,13 @@
                         me.$textChangeValue = 0;
                     }
                     $('.new__content-set h1').addClass('animation');
-                }, 0)
+                }, 1000)
             };
 
             setInterval(function() {
                 me.$textChangeValue++;
                 changeText()
-            }, 5000);
+            }, 4000);
         },
         // -------------------------------------------
         // 언어 변경
@@ -68,11 +70,22 @@
 
             var me = this;
 
+            $('body').on("click", ".locale__group", function (e) {
+                if($('.locale__group').hasClass('open') === true) {
+                    $('.locale__group').removeClass('open');
+                }
+                else {
+                    $('.locale__group').addClass('open');
+                }
+            });
+
             $('body').on("click", "#locale", function (e) {
                 var $self = $(this);
+                // var language = LANGUAGE.Global['locale_' + $self.data('locale').replace("-", "_")]();
                 $('a[id^="locale"]').removeClass('selected');
                 $self.addClass('selected');
                 localStorage.setItem('APP.locale', $self.data('locale'));
+                // localStorage.setItem('APP.language', language);
                 reload();
             });
 

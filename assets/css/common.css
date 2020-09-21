@@ -17,8 +17,8 @@ body {
   background-color: #fff;
   opacity: 1;
   -webkit-animation: ani-init 1s linear;
-  /* -moz-animation: ani-init 1s linear; */
-  /* animation: ani-init 1s linear; */
+  -moz-animation: ani-init 1s linear;
+  animation: ani-init 1s linear;
 }
 
 body,h1,h2,h3,p {
@@ -37,11 +37,10 @@ html {
 h1 {
   font-size: 52px;;
   line-height: 1.2;
-  letter-spacing: -2px;
 }
 
-.en h1 {
-  letter-spacing: 0px;
+.ko .new__content-set h1 {
+  letter-spacing: -2px;
 }
 
 h2 {
@@ -98,13 +97,11 @@ header {
   position: relative;
   margin: 0 auto;
   max-width: calc(1280px + 10%);
-  padding-left: 5%;
-  padding-right: 5%;
+  margin: 52px 5% 0 5%;
 }
 
 header .header__set {
-    display: inline-block;
-    margin: 52px 0 0
+  position: absolute;
 }
 
 header .header__set svg {
@@ -122,26 +119,111 @@ header .logo {
 }
 
 header .locale__set {
+  position: absolute;
+  top: -4px;
+  right: 0;
+  z-index: 10;
+}
+
+header .locale__group {
+  overflow: hidden;
+  z-index: 10;
+  width: 119px;
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+}
+
+header .locale__sel {
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  padding-left: 10px;
+  text-decoration: none;
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+}
+
+header .locale__group.open .locale__sel span{
+  padding-right: 0;
+}
+
+header .locale__sel span {
+  padding-right: 6px;
+}
+
+header .locale__group.opn .locale__sel .arr {
+    background-position: -182px -16px;
+}
+
+header .locale__group.open .locale__arrow {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  margin-top: -2px;
+  border: 5px solid transparent;
+  transform: rotate(-135deg);
+  border: solid rgba(0, 0, 0, 0.6);
+  border-width: 0 2px 2px 0;
   display: inline-block;
-  float: right;
-  margin: 56px 0 0;
+  padding: 2.5px;
+  transition: all 0.3s;
+  content: '';
 }
 
-header .locale__set li {
-    color: #000;
+header .locale__group .locale__arrow {
+  position: absolute;
+  top: 18px;
+  right: 12px;
+  margin-top: -5px;
+  border: 5px solid transparent;
+  transform: rotate(45deg);
+  border: solid rgba(0, 0, 0, 0.6);
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2.5px;
+  transition: all 0.3s;
+  content: '';
 }
 
-header .locale__set li:first-child {
-  float: left;
+header .locale__list-wrap {
+    display: none;
+    position: relative;
+    border-top: 1px solid #d3d3d3;
+    background-color: #fff;
+    padding: 8px 0 7px;
+    font-size: 13px;
 }
 
-header .locale__set li:last-child {
-  float: right;
-  padding-left: 15px;
+header .locale__group.open .locale__list-wrap {
+  display: block;
 }
 
-header .locale__set a.selected {
-  color: #813ccc;
+header .locale__list-wrap a {
+    display: block;
+    padding-left: 10px;
+    height: 26px;
+    line-height: 25px;
+    color: #333;
+    text-decoration: none;
+}
+
+header .locale__list-wrap a {
+  font-weight: normal;
+  color: #555;
+}
+
+header .locale__list-wrap a.selected {
+  color: #a514e4;
+}
+
+header .locale__list-wrap a:hover {
+  background-color: #b80dff;
+  color: #fff;
+}
+
+header .locale__list-wrap a.selected:hover  {
+  color: #fff;
 }
 
 /* ------------------------------------------ */
@@ -304,6 +386,10 @@ footer p {
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 2.9em;
+  word-break: break-all;
+}
+
+.ko .new__content-set h1 {
   letter-spacing: -3.12px;
 }
 
@@ -368,11 +454,11 @@ footer p {
   line-height: 61px;
   border-radius: 50px;
   margin: 10px 0;
-  letter-spacing: -0.4px;
 }
 
 .ko .new__section .new__link {
   min-width: 285px;
+  letter-spacing: -0.4px;
 }
 
 .new__section .new__link:before {
@@ -708,10 +794,6 @@ display: grid;
 @media only screen and (max-width: 1400px) {
   header {
     position: relative;
-    margin: 0 auto;
-    max-width: calc(1280px + 10%);
-    padding-left: 5%;
-    padding-right: 5%;
   }
 }
 
@@ -743,6 +825,10 @@ display: grid;
 }
 
 @media (max-width: 900px) {
+  header {
+    margin: 46px 5% 0 5%;
+  }
+  
   .new__section {
     position: relative;
     margin: 0 auto;
@@ -838,6 +924,10 @@ display: grid;
 }
 
 @media (max-width: 768px) {
+  header {
+    margin: 36px 5% 0 5%;
+  }
+  
   /* 자산 */
   .property__group {
     display: grid;
@@ -930,6 +1020,10 @@ display: grid;
 }
 
 @media only screen and (max-width: 540px) {
+  header {
+    margin: 26px 5% 0 5%;
+  }
+  
   .new__content-set h1 {
     font-size: 1.8em;
     padding-bottom: 15px;
@@ -940,11 +1034,6 @@ display: grid;
     font-size: .985rem;
   }
 
-  header .header__set {
-    display: inline-block;
-    margin: 30px 0 0;
-  }
-
   header .header__set .logo {
     background-size: 100px 29px;
     background-repeat: no-repeat;
@@ -953,9 +1042,10 @@ display: grid;
   }
 
   header .locale__set {
-    margin: 34px 0 0;
+    position: absolute;
+    top: -4px;
   }
-
+  
   header .locale__set li {
     color: #000;
     font-size: 0.875rem;

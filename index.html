@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -18,19 +18,19 @@
   <link href="./assets/css/common.css" rel="stylesheet">
 
   <!-- jquery -->
-  <script type='text/javascript' src="./assets/js/jquery/1.11.3/jquery.min.js"></script>
-  <script type='text/javascript' src="./assets/js/jquery/ui/1.12.1/jquery-ui.min.js"></script>
+  <script type='text/javascript' src="./assets/js/jquery/3.5.1/jquery.min.js"></script>
 
   <!-- Fontawesome -->
   <script type='text/javascript' defer src="./assets/js/fontawesome/v5.0.8/js/fontawesome-all.js"></script>
 
 </head>
 
+
 <body>
     
-    <!----------------------------------------->
+    <!--=====================================-->
     <!-- header -->
-    <!----------------------------------------->
+    <!--=====================================-->
     <header>
       <div class="header__set">
         <a href="javascript:;">
@@ -39,26 +39,28 @@
         </a>
       </div>
       <div class="locale__set">
-        <ul>
-          <li>
-            <a id="locale" data-locale="ko" href="javascript:;">
-              KOR
-              <span class="blind">한국어로 보기</span>
-            </a>
-          </li>
-          <li>
-            <a id="locale" data-locale="en" href="javascript:;">
-              ENG
-              <span class="blind">영어로 보기</span>
-            </a>
-          </li>
-        </ul>
+        <div class="locale__group">
+          <a href="javascript:;;" class="locale__sel">
+            <span class="locale__language">
+              <span class="blind">한국어</span>
+            </span>
+            <i class="locale__arrow"></i>
+          </a>
+          <div class="locale__list-wrap">
+            <a id="locale" data-locale="ko-KR" data-lang="Global.locale_ko_KR" href="javascript:;"><span class="blind">한국어</span></a>
+            <a id="locale" data-locale="en-US" data-lang="Global.locale_en_US" href="javascript:;"><span class="blind">영어</span></a>
+            <a id="locale" data-locale="gl-ES" data-lang="Global.locale_gl_ES" href="javascript:;"><span class="blind">스페인</span></a>
+            <a id="locale" data-locale="ja-JP" data-lang="Global.locale_ja_JP" href="javascript:;"><span class="blind">일본어</span></a>
+            <a id="locale" data-locale="zh-Hans" data-lang="Global.locale_zh_Hans" href="javascript:;"><span class="blind">중국어(간체)</span></a>
+            <a id="locale" data-locale="zh-Hant" data-lang="Global.locale_zh_Hant" href="javascript:;"><span class="blind">중국어(번체)</span></a>
+          </div>
+        </div>
       </div>
     </header>
     
-    <!----------------------------------------->
+    <!--=====================================-->
     <!-- main -->
-    <!----------------------------------------->
+    <!--=====================================-->
     <main id="content" role="main">
 
       <!-- section 01 -->
@@ -79,8 +81,8 @@
               </span>
             </p>
             <div class="download_btn-wrap">
-              <div><a href="javascript:;" class="new__link google" data-lang="Global.googlePlayDown"><span class="blind">Google Play 다운로드</span></a></div>
-              <div><a href="javascript:;" class="new__link apple" data-lang="Global.appStoreDown"><span class="blind">App Store 다운로드</span></a></div>
+              <div><a href="javascript:;" class="new__link google" data-lang="Global.google_play"><span class="blind">Google Play 다운로드</span></a></div>
+              <div><a href="javascript:;" class="new__link apple" data-lang="Global.app_store"><span class="blind">App Store 다운로드</span></a></div>
             </div>
           </div>
           <div class="new__image-set">
@@ -141,8 +143,8 @@
        <section class="down__section">
         <div class="down__group">
           <div class="down__content-set">
-            <a href="javascript:;" class="down__link google" data-lang="Global.googlePlayDown"><span class="blind">Google Play 다운로드</span></a>
-            <a href="javascript:;" class="down__link apple" data-lang="Global.appStoreDown"><span class="blind">App Store 다운로드</span></a>
+            <a href="javascript:;" class="down__link google" data-lang="Global.google_play"><span class="blind">Google Play 다운로드</span></a>
+            <a href="javascript:;" class="down__link apple" data-lang="Global.app_store"><span class="blind">App Store 다운로드</span></a>
           </div>
           <div class="down__soon-set">
             <span data-lang="Home.coming_soon_title"><span class="blind">위믹스 지갑 웹 서비스는 곧 돌아오겠습니다.</span></span>
@@ -153,9 +155,9 @@
 
     </main>
 
-    <!----------------------------------------->
+    <!--=====================================-->
     <!-- footer -->
-    <!----------------------------------------->
+    <!--=====================================-->
     <footer>
       <div class="footer">
         <div class="footer__set">
@@ -197,9 +199,11 @@
 
 <script>
  
-  $(function() {
+  window.onload = function() {
+
     new WEMIX.Svc.Main();
-  });
+    
+  }
 
 </script>
 

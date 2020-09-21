@@ -10,15 +10,21 @@
 
 	LANGUAGE.Global = {
 		serviceName: m("WEMIX"),
-		appStoreDown: m("App Store Download"),
-		googlePlayDown: m("Google Play Download"),
+		app_store: m("App Store Download"),
+		google_play: m("Google Play Download"),
+		locale_ko_KR: m("KOR"),
+		locale_en_US: m("ENG"),
+		locale_gl_ES: m("ESP"),
+		locale_ja_JP: m("日本"),
+		locale_zh_Hans: m("中文"),
+		locale_zh_Hant: m("中文(繁體)"),
 	};
 
 	LANGUAGE.Home = {
 		setction_01_title: m("Safely manage your assets, play games, and earn tokens."),
 		setction_01_title_02: m("Enjoy the game and get tokens."),
 		setction_01_title_03: m("Blockchain wallet that extends to games."),
-		setction_01_title_04: m("Game assets? Electronic money?\nManage it at once."),
+		setction_01_title_04: m("Game assets? Electronic money? Manage it at once."),
 		setction_01_emphasize: m("Various and proven high quality games."),
 		setction_01_desc: m("It provides high-quality DApp games that are comparable to app-type games. You can play games and manage digital assets acquired as rewards in your wallet at once."),
 		setction_02_title: m("Want to manage your growing digital assets?"),

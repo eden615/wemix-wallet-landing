@@ -74,14 +74,13 @@
 
   window.LANGUAGE = {};
 
-  // ----------------------------------------
+  // ========================================
   // locale js import
   // ----------------------------------------
   document.addEventListener("DOMContentLoaded", function () {
+    var locale = localStorage.getItem("APP.locale")
     var localeSrc =
-      "./assets/js/localization/language." +
-      localStorage.getItem("APP.locale") +
-      ".js";
+      "./assets/js/localization/language." + locale + ".js";
     var s = document.createElement("script");
     s.setAttribute("type", "text/javascript");
     s.setAttribute("src", localeSrc);
@@ -92,7 +91,7 @@
   //	언어
   // ----------------------------------------
   var _globalStorageLocaleName = "APP.locale";
-  var _globalServiceLanguage = ["ko", "en"];
+  var _globalServiceLanguage = ["ko-KR", "en-US", "gl-ES", "ja-JP", "zh-Hans", "zh-Hant"];
   var _globalMyLanguage = localStorage.getItem(_globalStorageLocaleName);
 
   WEMIX.getFirstBrowserLanguage = function () {
@@ -139,11 +138,11 @@
   // 초기 언어 SET
   if (_globalMyLanguage == null) {
     _globalMyLanguage = WEMIX.getFirstBrowserLanguage();
-    _globalMyLanguage = _globalMyLanguage.split("-")[0];
+    // _globalMyLanguage = _globalMyLanguage.split("-")[0];
     if (_globalServiceLanguage.indexOf(_globalMyLanguage) >= 0) {
       localStorage.setItem(_globalStorageLocaleName, _globalMyLanguage);
     } else {
-      localStorage.setItem(_globalStorageLocaleName, "en");
+      localStorage.setItem(_globalStorageLocaleName, "en-US");
     }
   }
 
