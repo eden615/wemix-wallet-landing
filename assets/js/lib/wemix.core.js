@@ -86,7 +86,7 @@
     s.setAttribute("src", localeSrc);
     document.getElementsByTagName("head")[0].appendChild(s);
   });
-
+  
   // ----------------------------------------
   //	언어
   // ----------------------------------------

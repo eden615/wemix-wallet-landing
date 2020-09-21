@@ -32,7 +32,11 @@
             $("html").attr("lang", locale.split('-')[0]);
             $("body").attr("class", locale.split('-')[0]);
             $('a[data-locale="' + locale + '"]').addClass('selected');
-            $('.locale__language').html(LANGUAGE.Global['locale_' + locale.replace("-", "_")]());
+            try {
+                $('.locale__language').html(LANGUAGE.Global['locale_' + locale.replace("-", "_")]());
+            } catch(e) {
+                localStorage.setItem('APP.locale', 'en-US');
+            }
         },
         // -------------------------------------------
         // 문구 변경
