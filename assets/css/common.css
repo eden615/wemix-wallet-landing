@@ -97,7 +97,7 @@ header {
   position: relative;
   margin: 0 auto;
   max-width: calc(1280px + 10%);
-  margin: 52px 5% 0 5%;
+  padding: 52px 5% 0 5%;
 }
 
 header .header__set {
@@ -120,13 +120,14 @@ header .logo {
 
 header .locale__set {
   position: absolute;
-  top: -4px;
-  right: 0;
+  right: 5%;
   z-index: 10;
 }
 
 header .locale__group {
   overflow: hidden;
+  position: relative;
+  top: -4px;
   z-index: 10;
   width: 119px;
   border: 1px solid #d3d3d3;
@@ -826,14 +827,14 @@ display: grid;
 
 @media (max-width: 900px) {
   header {
-    margin: 46px 5% 0 5%;
+    padding: 46px 5% 0 5%;
   }
   
   .new__section {
     position: relative;
     margin: 0 auto;
     max-width: calc(1280px + 5%);
-    padding: 30px 5% 0 5%;
+    padding: 50px 5% 0 5%;
     word-break: keep-all;
   }
 
@@ -925,7 +926,7 @@ display: grid;
 
 @media (max-width: 768px) {
   header {
-    margin: 36px 5% 0 5%;
+    padding: 36px 5% 0 5%;
   }
   
   /* 자산 */
@@ -1021,7 +1022,7 @@ display: grid;
 
 @media only screen and (max-width: 540px) {
   header {
-    margin: 26px 5% 0 5%;
+    padding: 26px 5% 0 5%;
   }
   
   .new__content-set h1 {
@@ -1043,7 +1044,6 @@ display: grid;
 
   header .locale__set {
     position: absolute;
-    top: -4px;
   }
   
   header .locale__set li {
