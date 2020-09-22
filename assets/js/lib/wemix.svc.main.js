@@ -10,17 +10,13 @@
 
     WEMIX.namespace("WEMIX.Svc.Main");
 
-    /**
-     * 언어 선택
-     * 
-     */
     WEMIX.Svc.Main = Class.extend({
         init: function (obj) {
             var me = this;
 
             me.$local = WEMIX._globalMyLanguage();
             me.setCurrentLanguage();
-            me.setChangeMainText()
+            me.setChangeMainText();
             me.clickChangeLocale();
             me.clickAppDownload();
         },
@@ -106,20 +102,19 @@
 
             $('body').on("click", ".apple", function (e) {
                 var $self = $(this);
-                goDownLink('apple')
+                var storeLink = $self.data('store-url');
+                goDownLink(storeLink)
             });
 
             $('body').on("click", ".google", function (e) {
                 var $self = $(this);
-                goDownLink('google')
+                var storeLink = $self.data('store-web-url');
+                goDownLink(storeLink)
             });
 
-            function goDownLink(storeName) {
-                if(storeName === 'google'){
-                    alert('구글 플레이 다운로드 주소를 넣어야 합니다.');
-                } else {
-                    alert('앱스토어 다운로드 주소를 넣어야 합니다.');
-                }
+            function goDownLink(uri) {
+                window.open(uri, '_blank');
+                // window.location.href = storeLink;
             }
         }
     })

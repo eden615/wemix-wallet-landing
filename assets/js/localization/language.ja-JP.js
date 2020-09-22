@@ -12,12 +12,12 @@ LANGUAGE.Global = {
 	serviceName: m("WEMIX"),
 	app_store: m("App Store Download"),
 	google_play: m("Google Play Download"),
-	locale_ko_KR: m("KOR"),
-	locale_en_US: m("ENG"),
-	locale_gl_ES: m("ESP"),
-	locale_ja_JP: m("日本"),
-	locale_zh_Hans: m("中文"),
-	locale_zh_Hant: m("中文(繁體)"),
+	locale_ko_KR: m("한국어"),
+	locale_en_US: m("ENGLISH"),
+	locale_gl_ES: m("SPANISH"),
+	locale_ja_JP: m("日本語"),
+	locale_zh_Hans: m("简体中文"),
+	locale_zh_Hant: m("繁体中文"),
 };
 
 LANGUAGE.Home = {
@@ -40,7 +40,7 @@ LANGUAGE.Home = {
 LANGUAGE.Footer = {
 	company_name: m("ABOUT WEMADE TREE"),
 	company_plt: m("Wemade Tree Pte, Ltd"),
-	privacy_policy: m("RIVACY POLICY"),
+	privacy_policy: m("PRIVACY POLICY"),
 	terms_of_use: m("TERMS OF SERVICE"),
 	contact_us: m("CONTACT US"),
 	copyright: m("Copyright ⓒ 2018 Wemade Tree, All rights Reserved"),

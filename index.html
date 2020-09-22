@@ -5,6 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="index,nofollow"/>
+  <meta name="description" content="디지털 자산을 간단히 전송 환전 거래까지 안전한 블록체인 서비스를 만나볼 수 있도록 준비했습니다."/>
+  <meta name="keywords" content="wemix, blockchain, game"/>
   <meta property="og:url" content="https://wemixnetwork.com/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="빠르고 안전한 블록체인 지갑 서비스를 만나보세요!">
@@ -81,8 +84,8 @@
               </span>
             </p>
             <div class="download_btn-wrap">
-              <div><a href="javascript:;" class="new__link google" data-lang="Global.google_play"><span class="blind">Google Play 다운로드</span></a></div>
-              <div><a href="javascript:;" class="new__link apple" data-lang="Global.app_store"><span class="blind">App Store 다운로드</span></a></div>
+              <div><a href="javascript:;" class="new__link google" data-lang="Global.google_play" data-store-url="market://details?id=com.wemadetree.wemixwallet" data-store-web-url="https://play.google.com/store/apps/details?id=com.wemadetree.wemixwallet"><span class="blind">Google Play 다운로드</span></a></div>
+              <div><a href="javascript:;" class="new__link apple" data-lang="Global.app_store" data-store-url="https://itunes.apple.com/app/id1531057807" data-store-web-url="https://itunes.apple.com/app/id1531057807"><span class="blind">App Store 다운로드</span></a></div>
             </div>
           </div>
           <div class="new__image-set">
@@ -143,8 +146,8 @@
        <section class="down__section">
         <div class="down__group">
           <div class="down__content-set">
-            <a href="javascript:;" class="down__link google" data-lang="Global.google_play"><span class="blind">Google Play 다운로드</span></a>
-            <a href="javascript:;" class="down__link apple" data-lang="Global.app_store"><span class="blind">App Store 다운로드</span></a>
+            <a href="javascript:;" class="down__link google" data-lang="Global.google_play" data-store-url="market://details?id=com.wemadetree.wemixwallet" data-store-web-url="https://play.google.com/store/apps/details?id=com.wemadetree.wemixwallet"><span class="blind">Google Play 다운로드</span></a>
+            <a href="javascript:;" class="down__link apple" data-lang="Global.app_store" data-store-url="https://itunes.apple.com/app/id1531057807" data-store-web-url="https://itunes.apple.com/app/id1531057807"><span class="blind">App Store 다운로드</span></a>
           </div>
           <div class="down__soon-set">
             <span data-lang="Home.coming_soon_title"><span class="blind">위믹스 지갑 웹 서비스는 곧 돌아오겠습니다.</span></span>
@@ -164,10 +167,10 @@
           <div class="footer__group">
             <div class="footer__about">
               <div class="footer__about footer__about-link">
-                <a href="/about" target="_blank" data-lang="Footer.company_name"><span class="blind">ABOUT WEMADE TREE</span></a>
+                <a href="https://wemixnetwork.com/about" target="_blank" data-lang="Footer.company_name"><span class="blind">ABOUT WEMADE TREE</span></a>
                 <a href="mailto:customer@wemadetree.com.sg" data-lang="Footer.contact_us"><span class="blind">CONTACT US</span></a>
-                <a href="/terms" target="_blank" data-lang="Footer.terms_of_use"><span class="blind">TERMS OF SERVICE</span></a>
-                <a href="/privacy" target="_blank" data-lang="Footer.privacy_policy"><span class="blind">PRIVACY POLICY</span></a>
+                <a href="https://wemixnetwork.com/terms" target="_blank" data-lang="Footer.terms_of_use"><span class="blind">TERMS OF SERVICE</span></a>
+                <a href="https://wemixnetwork.com/privacy" target="_blank" data-lang="Footer.privacy_policy"><span class="blind">PRIVACY POLICY</span></a>
               </div>
             </div>
             <div class="footer__social">
@@ -199,11 +202,11 @@
 
 <script>
  
-  window.onload = function() {
-
+  $(window).on("load",function(){
+      
     new WEMIX.Svc.Main();
-    
-  }
+      
+  });
 
 </script>
 

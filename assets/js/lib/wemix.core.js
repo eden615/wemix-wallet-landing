@@ -74,13 +74,12 @@
 
   window.LANGUAGE = {};
 
-  // ========================================
+  // ----------------------------------------
   // locale js import
   // ----------------------------------------
   document.addEventListener("DOMContentLoaded", function () {
     var locale = localStorage.getItem("APP.locale")
-    var localeSrc =
-      "./assets/js/localization/language." + locale + ".js";
+    var localeSrc = "./assets/js/localization/language." + locale + ".js";
     var s = document.createElement("script");
     s.setAttribute("type", "text/javascript");
     s.setAttribute("src", localeSrc);
