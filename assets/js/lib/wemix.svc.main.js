@@ -14,7 +14,6 @@
         init: function (obj) {
             var me = this;
 
-            me.$local = WEMIX._globalMyLanguage();
             me.setCurrentLanguage();
             me.setChangeMainText();
             me.clickChangeLocale();

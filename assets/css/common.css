@@ -596,8 +596,12 @@ footer p {
 }
 
 .property__image-set img {
+  display: list-item;
   position: relative;
-  top: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
   width: 80%;
   height: auto;
   padding-top: 120px;
@@ -655,8 +659,9 @@ display: grid;
 }
 
 .exchange__image-set img {
+  display: block;
   position: relative;
-  top: 5px;
+  top: 0;
   width: 80%;
   height: auto;
   padding-top: 120px;
