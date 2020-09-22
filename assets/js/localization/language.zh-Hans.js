@@ -21,8 +21,8 @@ LANGUAGE.Global = {
 };
 
 LANGUAGE.Home = {
-	setction_01_title: m("畅玩游戏，获得Token和NFT。"),
-	setction_01_title_02: m("管理Token和NFT。"),
+	setction_01_title: m("畅玩游戏，<br />获得Token和NFT"),
+	setction_01_title_02: m("管理Token和NFT"),
 	setction_01_title_03: m("支持游戏的区块链钱包"),
 	setction_01_title_04: m("游戏资产？加密货币？请一站式管理！"),
 	setction_01_emphasize: m("高品质区块链游戏"),
