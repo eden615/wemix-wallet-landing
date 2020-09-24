@@ -37,7 +37,7 @@ html {
 h1 {
   font-size: 52px;;
   line-height: 1.2;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .ko .new__content-set h1 {
@@ -1360,6 +1360,58 @@ display: grid;
   }
 
   .gl .down__section .down__link.apple em:last-child, .en .down__section .down__link.apple em:last-child {
+    position: relative;
+    top: 19px;
+  }
+
+
+
+
+  
+  .ja .new__section .new__link.google em:first-child {
+    position: absolute;
+    top: 5px;
+    left: 82px;
+    font-size: 0.8rem;
+  }
+
+  .ja .new__section .new__link.google em:last-child {
+    position: relative;
+    top: 19px;
+  }
+
+  .ja .new__section .new__link.apple em:first-child {
+    position: absolute;
+    top: 5px;
+    left: 82px;
+    font-size: 0.8rem;
+  }
+
+  .ja .new__section .new__link.apple em:last-child {
+    position: relative;
+    top: 19px;
+  }
+
+  .ja .down__section .down__link.google em:first-child {
+    position: absolute;
+    top: 5px;
+    left: 82px;
+    font-size: 0.8rem;
+  }
+
+  .ja .down__section .down__link.google em:last-child {
+    position: relative;
+    top: 19px;
+  }
+
+  .ja .down__section .down__link.apple em:first-child {
+    position: absolute;
+    top: 5px;
+    left: 82px;
+    font-size: 0.8rem;
+  }
+
+  .ja .down__section .down__link.apple em:last-child {
     position: relative;
     top: 19px;
   }
