@@ -427,19 +427,6 @@ footer p {
   animation-fill-mode: both;
 }
 
-@keyframes ani-blurIn {
-  0% {
-      transform: translate3d(0,-60px,0) scale(0.9, 2);
-      filter: blur(3px);
-      opacity: 0;
-  }
-  100% {
-      transform: translate3d(0,0,0) scale(1);
-      filter: blur(0);
-      opacity: 1;
-  }
-}
-
 .en .new__content-set h1 {
   letter-spacing: 0;
 }
@@ -863,7 +850,6 @@ display: grid;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: -1.4px;
-  line-height: 52px;
   color: #727272;
 }
 
@@ -1100,7 +1086,7 @@ display: grid;
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media (max-width: 540px) {
   header {
     padding: 26px 5% 0 5%;
   }
@@ -1243,7 +1229,7 @@ display: grid;
   }
 }
 
-@media only screen and (max-width: 360px) {
+@media (max-width: 360px) {
   .new__section .new__link.apple::after {
     background-size: 28px 32px;
     background-repeat: no-repeat;
@@ -1364,10 +1350,6 @@ display: grid;
     top: 19px;
   }
 
-
-
-
-  
   .ja .new__section .new__link.google em:first-child {
     position: absolute;
     top: 5px;
@@ -1497,17 +1479,7 @@ display: grid;
   }
 }
 
-@media only screen and (max-width: 320px) {
-  .new__content-set {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    padding: 30px 2%;
-}
-
-
-@-webkit-keyframes 
-ani-init {  
+@-webkit-keyframes ani-init {  
   0% {
     opacity: 0;
   -webkit-animation-timing-function: ease-in;
@@ -1526,8 +1498,7 @@ ani-init {
   }
 }
 
-@-moz-keyframes 
-ani-init {  
+@-moz-keyframes ani-init {  
   0% {
     opacity: 0;
     -moz-animation-timing-function: ease-in;
@@ -1546,8 +1517,7 @@ ani-init {
   }
 }
 
-@keyframes 
-ani-init {  
+@keyframes ani-init {  
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
@@ -1571,5 +1541,18 @@ ani-init {
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
+  }
+}
+
+@keyframes ani-blurIn {
+  0% {
+      transform: translate3d(0,-60px,0) scale(0.9, 2);
+      filter: blur(3px);
+      opacity: 0;
+  }
+  100% {
+      transform: translate3d(0,0,0) scale(1);
+      filter: blur(0);
+      opacity: 1;
   }
 }
