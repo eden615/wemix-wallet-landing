@@ -464,6 +464,7 @@ footer p {
 
 .new__section .download_btn-wrap {
   margin: 30px 0;
+  letter-spacing: -.5px;
 }
 
 .new__section .new__link {
@@ -526,6 +527,10 @@ footer p {
   padding: 0 2.6em 0 4.9em;
 }
 
+.zh .new__section .new__link.apple {
+  min-width: 260px;
+}
+
 .new__section .new__link.apple::after {
   background-image: url('../images/ico-apple-store-black.svg');
   background-size: 30px 34px;
@@ -562,6 +567,10 @@ footer p {
   bottom: 0;
   margin: auto;
   content: '';
+}
+
+.zh .new__section .new__link.google {
+  min-width: 260px;
 }
 
 .new__section .new__link:hover {
@@ -775,6 +784,10 @@ display: grid;
   padding: 0 2.6em 0 4.9em;
 }
 
+.zh .down__section .down__link.apple {
+  min-width: 260px;
+}
+
 .down__section .down__link.apple::after {
   background-image: url('../images/ico-apple-store-black.svg');
   background-size: 30px 34px;
@@ -811,6 +824,10 @@ display: grid;
   bottom: 0;
   margin: auto;
   content: '';
+}
+
+.zh .down__section .down__link.google {
+  min-width: 260px;
 }
 
 .down__section .down__link:hover {
