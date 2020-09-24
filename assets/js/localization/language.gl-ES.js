@@ -10,8 +10,8 @@
 
 LANGUAGE.Global = {
 	serviceName: m("WEMIX"),
-	app_store: m("App Store 다운로드"),
-	google_play: m("Google Play 다운로드"),
+	app_store: m("Descargar en la App Store"),
+	google_play: m("Descargar en la Google Play"),
 	locale_ko_KR: m("한국어"),
 	locale_en_US: m("ENGLISH"),
 	locale_gl_ES: m("SPANISH"),

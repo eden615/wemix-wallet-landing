@@ -397,6 +397,7 @@ footer p {
   grid-row: 1;
   width: 100%;
   padding: 30px 0;
+  word-break: break-all;
 }
 
 .new__content-set h1 {
@@ -408,7 +409,7 @@ footer p {
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 2.9em;
-  word-break: break-all;
+  word-break: keep-all;
 }
 
 .ko .new__content-set h1 {
@@ -513,6 +514,18 @@ footer p {
   padding: 0 2em 0 4.9em;
 }
 
+.en .new__section .new__link.apple {
+  padding: 0 2.6em 0 4.9em;
+}
+
+.gl .new__section .new__link.apple {
+  padding: 0 2.6em 0 4.9em;
+}
+
+.ja .new__section .new__link.apple {
+  padding: 0 2.6em 0 4.9em;
+}
+
 .new__section .new__link.apple::after {
   background-image: url('../images/ico-apple-store-black.svg');
   background-size: 30px 34px;
@@ -595,6 +608,7 @@ footer p {
   width: 100%;
   padding: 80px 10%;
   align-self: center;
+  word-break: break-all;
 }
 
 .property__content-set h1 {
@@ -658,6 +672,7 @@ display: grid;
   width: 100%;
   padding: 80px 10%;
   align-self: center;
+  word-break: break-all;
 }
 
 .exchange__content-set h1 {
@@ -746,6 +761,18 @@ display: grid;
 
 .down__section .down__link.apple {
   padding: 0 2em 0 4.9em;
+}
+
+.en .down__section .down__link.apple {
+  padding: 0 2.6em 0 4.9em;
+}
+
+.gl .down__section .down__link.apple {
+  padding: 0 2.6em 0 4.9em;
+}
+
+.ja .down__section .down__link.apple {
+  padding: 0 2.6em 0 4.9em;
 }
 
 .down__section .down__link.apple::after {

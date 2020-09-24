@@ -10,8 +10,8 @@
 
 LANGUAGE.Global = {
 	serviceName: m("WEMIX"),
-	app_store: m("App Store 다운로드"),
-	google_play: m("Google Play 다운로드"),
+	app_store: m("App Store 下载"),
+	google_play: m("Google Play 下载"),
 	locale_ko_KR: m("한국어"),
 	locale_en_US: m("ENGLISH"),
 	locale_gl_ES: m("SPANISH"),
@@ -21,7 +21,7 @@ LANGUAGE.Global = {
 };
 
 LANGUAGE.Home = {
-	setction_01_title: m("暢玩遊戲，<br />獲得Token和NFT"),
+	setction_01_title: m("暢玩遊戲，獲得Token和NFT"),
 	setction_01_title_02: m("管理Token和NFT"),
 	setction_01_title_03: m("支持遊戲的區塊鏈錢包"),
 	setction_01_title_04: m("遊戲資產？加密貨幣？請壹站式管理！"),

@@ -10,8 +10,8 @@
 
 LANGUAGE.Global = {
 	serviceName: m("WEMIX"),
-	app_store: m("App Store Download"),
-	google_play: m("Google Play Download"),
+	app_store: m("App Store で手に入れよう"),
+	google_play: m("Google Play で手に入れよう"),
 	locale_ko_KR: m("한국어"),
 	locale_en_US: m("ENGLISH"),
 	locale_gl_ES: m("SPANISH"),
@@ -25,16 +25,16 @@ LANGUAGE.Home = {
 	setction_01_title_02: m("ゲームを楽しんで、トークンを入手してください"),
 	setction_01_title_03: m("ゲームに拡張するブロックチェーンウォレット"),
 	setction_01_title_04: m("ゲームアセット？電子マネーですか？一度に管理してください"),
-	setction_01_emphasize: m("Various and proven high quality games."),
-	setction_01_desc: m("It provides high-quality DApp games that are comparable to app-type games. You can play games and manage digital assets acquired as rewards in your wallet at once."),
-	setction_02_title: m("Want to manage your growing digital assets?"),
-	setction_02_emphasize: m("Blockchain asset storage and transaction."),
-	setction_02_desc: m("WeMix provides a safe asset movement and exchange experience. You earn tokens just by playing the game. It means that your assets are increasing. Increase your assets by buying, exchanging, or selling content with increased assets."),
-	setction_03_title: m("Reasons to use the WEMIX Wallet."),
-	setction_03_emphasize: m("Transfer of asset movement exchanges in seconds."),
-	setction_03_desc: m("Wemix provides a service environment that processes large-scale transactions quickly and smoothly at a tremendous speed. Create your wallet now to experience this incredible speed. Just enter your password once and your wallet will be created immediately."),
-	coming_soon_title: m("WEMIX Wallet web service will be back soon."),
-	coming_soon_desc: m("Currently being renovated. See you soon."),
+	setction_01_emphasize: m("多様で検証されたクオリティの高いゲーム。"),
+	setction_01_desc: m("App形態のゲームと比べても全く遜色がない高クオリティのDAppゲームを提供しています。ゲームをプレイして報酬で獲得したデジタル資産を財布から一度に管理することができます。"),
+	setction_02_title: m("ますます増えるデジタル資産を管理したい場合は？"),
+	setction_02_emphasize: m("ブロックチェーンの資産保管と契約。"),
+	setction_02_desc: m("上記ミックスでは、安全な資産の移動と交換の経験を提供していましょう。ゲームをプレイするだけで、トークンを取得します。ますます資産が増えるという話ですよ。増資産にコンテンツを購入したり、交換または販売して資産を増やしてみてください。"),
+	setction_03_title: m("上記ミックス財布を使用すると、理由がある。"),
+	setction_03_emphasize: m("資産移動交換を瞬時に転送します。"),
+	setction_03_desc: m("上記ミックスでは、大規模なトランザクションを驚異的なスピードで迅速かつ円滑に処理するサービス環境を提供しています。この驚くべき速度を経験する今の財布を送ってください。パスワードを一度入力するだけで、すぐに財布が生成されます。"),
+	coming_soon_title: m("上記ミックス財布Webサービスは、すぐに戻ってきました。"),
+	coming_soon_desc: m("現在改装中。近いうちにお目にかかります。"),
 };
 
 LANGUAGE.Footer = {
