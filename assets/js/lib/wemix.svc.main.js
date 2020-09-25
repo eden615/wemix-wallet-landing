@@ -15,7 +15,7 @@
             var me = this;
 
             me.setCurrentLanguage();
-            me.setChangeMainText();
+            // me.setChangeMainText();
             me.clickChangeLocale();
             me.clickAppDownload();
         },

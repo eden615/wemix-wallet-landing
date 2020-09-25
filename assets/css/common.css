@@ -53,6 +53,7 @@ p {
   font-size: 22px;
   line-height: 1.5;
   letter-spacing: -0.66px;
+  word-break: break-word;
 }
 
 .en p {
@@ -596,7 +597,7 @@ footer p {
 .property__group {
   display: grid;
   grid-template-columns: .5fr .5fr;
-  text-align: right;
+  text-align: left;
   max-width: calc(1280px + 5%);
   margin: auto;
 }
