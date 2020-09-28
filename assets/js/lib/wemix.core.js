@@ -73,7 +73,7 @@
   };
 
   window.LANGUAGE = {};
-
+  
   // ----------------------------------------
   // locale js import
   // ----------------------------------------
@@ -85,70 +85,28 @@
     s.setAttribute("src", localeSrc);
     document.getElementsByTagName("head")[0].appendChild(s);
   });
-  
+
   // ----------------------------------------
-  //	언어
+  // 언어
   // ----------------------------------------
   var _globalStorageLocaleName = "APP.locale";
-  var _globalServiceLanguage = ["ko-KR", "en-US", "gl-ES", "ja-JP", "zh-Hans", "zh-Hant"];
+  var _globalServiceLanguage = ["ko-KR", "en-US", "gl-ES", "ja-JP", "zh-CN", "zh-TW"];
   var _globalMyLanguage = localStorage.getItem(_globalStorageLocaleName);
-
-  WEMIX.getFirstBrowserLanguage = function () {
-    var nav = window.navigator,
-      browserLanguagePropertyKeys = [
-        "language",
-        "browserLanguage",
-        "systemLanguage",
-        "userLanguage",
-      ],
-      i,
-      language,
-      len,
-      shortLanguage = null;
-
-    // support for HTML 5.1 "navigator.languages"
-    if (Array.isArray(nav.languages)) {
-      for (i = 0; i < nav.languages.length; i++) {
-        language = nav.languages[i];
-        len = language.length;
-        if (!shortLanguage && len) {
-          shortLanguage = language;
-        }
-        if (language && len > 2) {
-          return language;
-        }
-      }
-    }
-
-    // support for other well known properties in browsers
-    for (i = 0; i < browserLanguagePropertyKeys.length; i++) {
-      language = nav[browserLanguagePropertyKeys[i]];
-      len = language.length;
-      if (!shortLanguage && len) {
-        shortLanguage = language;
-      }
-      if (language && len > 2) {
-        return language;
-      }
-    }
-    return shortLanguage;
-  };
-
+  
   // 초기 언어 SET
   if (_globalMyLanguage == null) {
-    _globalMyLanguage = WEMIX.getFirstBrowserLanguage();
-    // _globalMyLanguage = _globalMyLanguage.split("-")[0];
-    if (_globalServiceLanguage.indexOf(_globalMyLanguage) >= 0) {
+    _globalMyLanguage = navigator.language || navigator.userLanguage;
+    if (_globalServiceLanguage.includes(_globalMyLanguage)) {
       localStorage.setItem(_globalStorageLocaleName, _globalMyLanguage);
     } else {
       localStorage.setItem(_globalStorageLocaleName, "en-US");
     }
   }
-
+  
   WEMIX._globalMyLanguage = function () {
     return _globalMyLanguage;
   };
-
+  
   WEMIX._globalServiceLanguage = function () {
     return _globalServiceLanguage;
   };

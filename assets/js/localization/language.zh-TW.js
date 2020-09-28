@@ -16,8 +16,8 @@ LANGUAGE.Global = {
 	locale_en_US: m("ENGLISH"),
 	locale_gl_ES: m("SPANISH"),
 	locale_ja_JP: m("日本語"),
-	locale_zh_Hans: m("简体中文"),
-	locale_zh_Hant: m("繁体中文"),
+	locale_zh_CN: m("简体中文"),
+	locale_zh_TW: m("繁体中文"),
 };
 
 LANGUAGE.Home = {
