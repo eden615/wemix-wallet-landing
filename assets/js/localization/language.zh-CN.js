@@ -21,27 +21,27 @@ LANGUAGE.Global = {
 };
 
 LANGUAGE.Home = {
-	setction_01_title: m("畅玩游戏，获得Token和NFT"),
+	setction_01_title: m("畅玩游戏, 赚取Token和NFT"),
 	setction_01_title_02: m("管理Token和NFT"),
-	setction_01_title_03: m("支持游戏的区块链钱包"),
-	setction_01_title_04: m("游戏资产？加密货币？请一站式管理！"),
-	setction_01_emphasize: m("高品质区块链游戏"),
-	setction_01_desc: m("提供拒绝比较的高品质DApp游戏。一站式管理玩游戏获得的数码资产。"),
-	setction_02_title: m("想轻松管理日渐增多地数码资产吗？"),
-	setction_02_emphasize: m("区块链资产保管和交易"),
-	setction_02_desc: m("WEMIX提供安全的资产传送和交易服务。玩WEMIX游戏，赚取资产，安全管理！"),
+	setction_01_title_03: m("区块链游戏钱包"),
+	setction_01_title_04: m("游戏资产？加密货币？一站式管理！"),
+	setction_01_emphasize: m("支持高品质区块链游戏"),
+	setction_01_desc: m("从玩游戏到交易游戏资产, 在WEMIX 钱包轻松管理。"),
+	setction_02_title: m("想要轻松管理 日益增多的数码资产吗？"),
+	setction_02_emphasize: m("数码资产保管和交易"),
+	setction_02_desc: m("WEMIX钱包提供安全的资产传送和交易服务。玩WEMIX游戏、赚取数码资产，在WEMIX钱包轻松管理！"),
 	setction_03_title: m("为什么选择WEMIX钱包？"),
-	setction_03_emphasize: m("快速传送资产"),
-	setction_03_desc: m("WEMIX钱包提供快速处理大规模交易。轻松注册WEMIX钱包，体验舒服的WEMIX服务吧！"),
-	coming_soon_title: m("网页版WEMIX钱包正在改装中"),
+	setction_03_emphasize: m("安全、迅速 "),
+	setction_03_desc: m("WEMIX钱包快速安全的处理大规模交易。请简单注册WEMIX钱包，赶紧体验与众不同的WEMIX服务吧！"),
+	coming_soon_title: m("网页版WEMIX钱包正在改装中..."),
 	coming_soon_desc: m("敬请期待！"),
 };
 
 LANGUAGE.Footer = {
-	company_name: m("关于 WEMADE TREE"),
+	company_name: m("ABOUT WEMADE TREE"),
 	company_plt: m("Wemade Tree Pte, Ltd"),
-	privacy_policy: m("隐私政策"),
-	terms_of_use: m("服务条款"),
+	privacy_policy: m("PRIVACY POLICY"),
+	terms_of_use: m("TERMS OF SERVICE"),
 	contact_us: m("CONTACT US"),
 	copyright: m("Copyright ⓒ 2018 Wemade Tree, All rights Reserved"),
 };

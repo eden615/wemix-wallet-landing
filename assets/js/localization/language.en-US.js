@@ -26,7 +26,7 @@ LANGUAGE.Home = {
 	setction_01_title_03: m("Blockchain wallet, expands to the Game services"),
 	setction_01_title_04: m("Game property? Cryptocurrency? Handle it in WEMIX"),
 	setction_01_emphasize: m("Various & High-quality games."),
-	setction_01_desc: m("WEMIX provides well-made blockchain games as good as other apps games from the appstore. Play the game, Earn digital assest reward, and manage all at once in WEMIX Wallet."),
+	setction_01_desc: m("WEMIX provides well-made blockchain games as good as other apps games from the appstore. Play the game, Get digital assest as a reward, and manage all at once in WEMIX Wallet."),
 	setction_02_title: m("Wish to handle increasing digital assets?"),
 	setction_02_emphasize: m("Store & Trade a digital aseets."),
 	setction_02_desc: m("WEMIX offers user a safe property tranfer and trading experience through gameplay. User can obtain tokens from the game, purchase the contents, trade or sell to make a profit."),

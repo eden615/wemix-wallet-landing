@@ -38,11 +38,11 @@ LANGUAGE.Home = {
 };
 
 LANGUAGE.Footer = {
-	company_name: m("Sobre WEMADE TREE"),
+	company_name: m("ABOUT WEMADE TREE"),
 	company_plt: m("Wemade Tree Pte, Ltd"),
-	privacy_policy: m("Politica de privacidad"),
-	terms_of_use: m("Terminos de uso"),
-	contact_us: m("Contáctanos"),
+	privacy_policy: m("PRIVACY POLICY"),
+	terms_of_use: m("TERMS OF SERVICE"),
+	contact_us: m("CONTACT US"),
 	copyright: m("Copyright ⓒ 2018 Wemade Tree, All rights Reserved"),
 };
 
