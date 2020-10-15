@@ -24,8 +24,13 @@
         // -------------------------------------------
         setCurrentLanguage: function () {
             var locale = localStorage.getItem('APP.locale')
-            $("html").attr("lang", locale.split('-')[0]);
-            $("body").attr("class", locale.split('-')[0]);
+            if(locale.split('-')[0] == 'zh') {
+                $("html").attr("lang", locale.toLowerCase());
+                $("body").attr("class", locale.toLowerCase());
+            } else {
+                $("html").attr("lang", locale.split('-')[0]);
+                $("body").attr("class", locale.split('-')[0]);
+            }
             $('a[data-locale="' + locale + '"]').addClass('selected');
             try {
                 $('.locale__language').html(LANGUAGE.Global['locale_' + locale.replace("-", "_")]());

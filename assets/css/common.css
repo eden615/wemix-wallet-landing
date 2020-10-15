@@ -1,7 +1,25 @@
 
 @font-face {
+  font-family: NotoSans;
+  src: url(../font/NotoSans-Bold.ttf);
+  font-weight: 400;
+}
+
+@font-face {
   font-family: NotoSansKR-Medium;
   src: url(../font/NotoSansKR-Medium.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NotoSansSC-Medium;
+  src: url(../font/NotoSansSC-Medium.otf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: NotoSansTC-Medium;
+  src: url(../font/NotoSansTC-Medium.otf);
   font-weight: 400;
 }
 
@@ -10,7 +28,6 @@
   src: url(../font/SCDream7.otf);
   font-weight: 800;
 }
-
 
 body {
   font-family: NotoSansKR-Medium,Apple SD Gothic Neo,Malgun Gothic,Helvetica,sans-serif;;
@@ -34,14 +51,27 @@ html {
   font-size: 16px;
 }
 
+.zh-cn h1 {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.zh-tw h1 {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.gl h1 {
+  font-family: 'NotoSans', sans-serif;
+}
+
+.ko h1 {
+  letter-spacing: -2px;
+}
+
 h1 {
+  font-family: 'SCDream7', sans-serif;
   font-size: 52px;;
   line-height: 1.2;
   word-break: break-word;
-}
-
-.ko .new__content-set h1 {
-  letter-spacing: -2px;
 }
 
 h2 {
@@ -49,19 +79,70 @@ h2 {
   line-height: 1.4;
 }
 
-p {
-  font-size: 22px;
-  line-height: 1.5;
+.zh-cn p {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.zh-tw p {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.gl p {
+  font-family: 'NotoSans', sans-serif;
+}
+
+.ko p {
   letter-spacing: -0.66px;
-  word-break: break-word;
 }
 
 .en p {
   letter-spacing: 0px;
 }
 
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  word-break: break-word;
+}
+
+.zh-cn span {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.zh-tw span {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.gl span {
+  font-family: 'NotoSans', sans-serif;
+}
+
+.ko span {
+  letter-spacing: -0.66px;
+}
+
+.en span {
+  letter-spacing: 0px;
+}
+
 em {
   font-style: initial;
+}
+
+.zh-cn a {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.zh-tw a {
+  font-family: 'NotoSansSC-Medium', sans-serif;
+}
+
+.gl a {
+  font-family: 'NotoSans', sans-serif;
+}
+
+.ko a {
+  letter-spacing: -0.66px;
 }
 
 a {
@@ -406,7 +487,6 @@ footer p {
 }
 
 .new__content-set h1 {
-  font-family: 'SCDream7', sans-serif;
   color: #813ccc;
   padding-bottom: 30px;
   background: -webkit-linear-gradient(-35deg, #813ccc, #b80dff);
@@ -414,10 +494,6 @@ footer p {
   background-clip: text;
   -webkit-background-clip: text;
   font-size: 2.9em;
-}
-
-.ko .new__content-set h1 {
-  letter-spacing: -3.12px;
 }
 
 .new__content-set h1.animation {
@@ -612,7 +688,6 @@ footer p {
 }
 
 .property__content-set h1 {
-  font-family: 'SCDream7', sans-serif;
   color: #813ccc;
   font-size: 2.2rem;
   padding-bottom: 30px;
@@ -676,7 +751,6 @@ display: grid;
 }
 
 .exchange__content-set h1 {
-  font-family: 'SCDream7', sans-serif;
   color: #813ccc;
   font-size: 2.2rem;
   padding-bottom: 30px;
@@ -1009,7 +1083,6 @@ display: grid;
   }
 
   .property__content-set h1 {
-    font-family: 'SCDream7', sans-serif;
     color: #813ccc;
     font-size: 1.8rem;
     padding-bottom: 15px;
@@ -1051,7 +1124,6 @@ display: grid;
   }
 
   .exchange__content-set h1 {
-    font-family: 'SCDream7', sans-serif;
     color: #813ccc;
     font-size: 1.8rem;
     padding-bottom: 15px;

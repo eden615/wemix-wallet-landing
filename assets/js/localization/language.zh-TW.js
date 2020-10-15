@@ -32,7 +32,7 @@ LANGUAGE.Home = {
 	setction_02_desc: m("WEMIX錢包提供安全的資產傳送和交易服務。玩WEMIX遊戲、賺取數碼資產，在WEMIX錢包輕松管理！"),
 	setction_03_title: m("為什麽選擇WEMIX錢包？"),
 	setction_03_emphasize: m("安全、迅速"),
-	setction_03_desc: m("WEMIX錢包快速安全的處理大規模交易。請簡單加入WEMIX錢包會員，趕緊體驗與眾不同的WEMIX服務吧！"),
+	setction_03_desc: m("WEMIX錢包快速安全的處理大規模交易。請簡單加入WEMIX錢包會員，體驗與眾不同的WEMIX服務吧！"),
 	coming_soon_title: m("網頁版WEMIX錢包正在改裝中..."),
 	coming_soon_desc: m("敬請期待！"),
 };
