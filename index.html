@@ -1,236 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NL492TW");
+    </script>
+    <!-- End Google Tag Manager -->
 
-<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="index,nofollow" />
+    <meta
+      name="description"
+      content="WEMIX provides well-made blockchain games as good as other apps games from the appstore. Play the game, Earn digital assest reward, and manage all at once in WEMIX Wallet."
+    />
+    <meta name="keywords" content="wemix, blockchain, game" />
+    <meta property="og:url" content="https://wallet.wemixnetwork.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Enjoy the game and Achieve the NFT & Tokens"
+    />
+    <meta
+      property="og:description"
+      content="WEMIX provides well-made blockchain games as good as other apps games from the appstore. Play the game, Earn digital assest reward, and manage all at once in WEMIX Wallet."
+    />
+    <meta
+      property="og:image:url"
+      content="https://wemixnetwork.com/img/wemix_meta_logo.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <link rel="shortcut icon" href="https://wemixnetwork.com/img/favicon.ico" />
+    <title>WEMIX WALLET</title>
+    <link href="./assets/css/common.css" rel="stylesheet" />
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NL492TW');</script>
-  <!-- End Google Tag Manager -->
-  
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="robots" content="index,nofollow"/>
-  <meta name="description" content="WEMIX provides well-made blockchain games as good as other apps games from the appstore. Play the game, Earn digital assest reward, and manage all at once in WEMIX Wallet."/>
-  <meta name="keywords" content="wemix, blockchain, game"/>
-  <meta property="og:url" content="https://wallet.wemixnetwork.com">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Enjoy the game and Achieve the NFT & Tokens">
-  <meta property="og:description" content="WEMIX provides well-made blockchain games as good as other apps games from the appstore. Play the game, Earn digital assest reward, and manage all at once in WEMIX Wallet.">
-  <meta property="og:image:url" content="https://wemixnetwork.com/img/wemix_meta_logo.png">
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="1200">
-  <link rel="shortcut icon" href="https://wemixnetwork.com/img/favicon.ico">
-  <title>WEMIX WALLET</title>
-  <link href="./assets/css/common.css" rel="stylesheet">
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="./assets/js/jquery/3.5.1/jquery.min.js"
+    ></script>
 
-  <!-- jquery -->
-  <script type='text/javascript' src="./assets/js/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Fontawesome -->
+    <script
+      type="text/javascript"
+      defer
+      src="./assets/js/fontawesome/v5.0.8/js/fontawesome-all.js"
+    ></script>
+  </head>
 
-  <!-- Fontawesome -->
-  <script type='text/javascript' defer src="./assets/js/fontawesome/v5.0.8/js/fontawesome-all.js"></script>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NL492TW"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
-</head>
-
-<body>
-
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL492TW"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-    
-  <!--=====================================-->
-  <!-- header -->
-  <!--=====================================-->
-  <header>
-    <div class="header__set">
-      <a href="javascript:;">
-        <div class="logo"></div>
-        <span class="blind">WEMIX WALLET</span>
-      </a>
-    </div>
-    <div class="locale__set">
-      <div class="locale__group">
-        <a href="javascript:;;" class="locale__sel">
-          <span class="locale__language">
-            <span class="blind">한국어</span>
-          </span>
-          <i class="locale__arrow"></i>
+    <!--=====================================-->
+    <!-- header -->
+    <!--=====================================-->
+    <header>
+      <div class="header__set">
+        <a href="javascript:;">
+          <div class="logo"></div>
+          <span class="blind">WEMIX WALLET</span>
         </a>
-        <div class="locale__list-wrap">
-          <a id="locale" data-locale="ko-KR" data-lang="Global.locale_ko_KR" href="javascript:;"><span class="blind">한국어</span></a>
-          <a id="locale" data-locale="en-US" data-lang="Global.locale_en_US" href="javascript:;"><span class="blind">영어</span></a>
-          <a id="locale" data-locale="gl-ES" data-lang="Global.locale_gl_ES" href="javascript:;"><span class="blind">스페인</span></a>
-          <a id="locale" data-locale="ja-JP" data-lang="Global.locale_ja_JP" href="javascript:;"><span class="blind">일본어</span></a>
-          <a id="locale" data-locale="zh-CN" data-lang="Global.locale_zh_CN" href="javascript:;"><span class="blind">중국어(간체)</span></a>
-          <a id="locale" data-locale="zh-TW" data-lang="Global.locale_zh_TW" href="javascript:;"><span class="blind">중국어(번체)</span></a>
-        </div>
       </div>
-    </div>
-  </header>
-  
-  <!--=====================================-->
-  <!-- main -->
-  <!--=====================================-->
-  <main id="content" role="main">
-
-    <!-- section 01 -->
-    <section class="new__section">
-      <div class="new__group">
-        <div class="new__content-set">
-          <!-- 게임까지 확장하는 내 손안의 블록체인 지갑! -->
-          <h1 data-lang="Home.setction_01_title" class="animation"><span class="blind">안전하게 자산을 관리하고, 게임을 즐기고, 토근을 획득하고.</span></h1>
-          <p>
-            <strong data-lang="Home.setction_01_emphasize">
-              <span class="blind">다양하고 검증된 높은 퀄리티의 게임.</span>
-            </strong>
-            <span data-lang="Home.setction_01_desc">
-              <span class="blind">
-                App 형태의 게임들과 비교해도 전혀 손색이 없는 높은 퀄리티의 DApp 게임을 제공합니다.
-                게임을 플레이하고 보상으로 획득한 디지털 자산을 지갑에서 한꺼번에 관리할 수 있습니다.
-              </span>
+      <div class="locale__set">
+        <div class="locale__group">
+          <a href="javascript:;;" class="locale__sel">
+            <span class="locale__language">
+              <span class="blind">한국어</span>
             </span>
-          </p>
-          <div class="download_btn-wrap">
-            <div>
-              <a href="javascript:;" class="new__link google" data-store-url="https://wemixwallet.onelink.me/JaMW/maininstall" data-store-web-url="https://wemixwallet.onelink.me/JaMW/maininstall">
-                <span data-lang="Global.google_play"></span>
-                <span class="blind">Google Play 다운로드</span>
-              </a>
-            </div>
-            <!-- <div>
-              <a href="javascript:;" class="new__link apple" data-store-url="https://itunes.apple.com/app/id1531057807" data-store-web-url="https://itunes.apple.com/app/id1531057807">
-                <span class="blind">App Store 다운로드</span>
-              <span data-lang="Global.app_store"></span>
-              </a>
-            </div> -->
+            <i class="locale__arrow"></i>
+          </a>
+          <div class="locale__list-wrap">
+            <a
+              id="locale"
+              data-locale="ko-KR"
+              data-lang="Global.locale_ko_KR"
+              href="javascript:;"
+              ><span class="blind">한국어</span></a
+            >
+            <a
+              id="locale"
+              data-locale="en-US"
+              data-lang="Global.locale_en_US"
+              href="javascript:;"
+              ><span class="blind">영어</span></a
+            >
+            <a
+              id="locale"
+              data-locale="gl-ES"
+              data-lang="Global.locale_gl_ES"
+              href="javascript:;"
+              ><span class="blind">스페인</span></a
+            >
+            <a
+              id="locale"
+              data-locale="ja-JP"
+              data-lang="Global.locale_ja_JP"
+              href="javascript:;"
+              ><span class="blind">일본어</span></a
+            >
+            <a
+              id="locale"
+              data-locale="zh-CN"
+              data-lang="Global.locale_zh_CN"
+              href="javascript:;"
+              ><span class="blind">중국어(간체)</span></a
+            >
+            <a
+              id="locale"
+              data-locale="zh-TW"
+              data-lang="Global.locale_zh_TW"
+              href="javascript:;"
+              ><span class="blind">중국어(번체)</span></a
+            >
           </div>
         </div>
-        <div class="new__image-set">
-            <img class="new__image-set" src="./assets/images/img01.png" alt="">
-        </div>
       </div>
-    </section>
+    </header>
 
-    <!-- section 02 -->
-    <section class="property__section">
-      <div class="property__group">
-        <div class="property__content-set">
-          <h1 data-lang="Home.setction_02_title"><span class="blind">점점 늘어나는 디지털 자산을 관리하고 싶다면?</span></h1>
-          <p>
-            <strong data-lang="Home.setction_02_emphasize">
-              <span class="blind">블록체인 자산 보관과 거래.</span>
-            </strong>
-            <span data-lang="Home.setction_02_desc">
-              <span class="blind">
-                위믹스에서는 안전한 자산 이동과 교환 경험을 제공하죠.
-                게임을 플레이만으로 토큰을 획득합니다.
-                점점 자산이 늘어난다는 얘기죠. 늘어난 자산으로 콘텐츠 구매하거나 교환 또는 판매하여 자산을 늘려보세요.
+    <!--=====================================-->
+    <!-- main -->
+    <!--=====================================-->
+    <main id="content" role="main">
+      <!-- section 01 -->
+      <section class="new__section">
+        <div class="new__group">
+          <div class="new__content-set">
+            <!-- 게임까지 확장하는 내 손안의 블록체인 지갑! -->
+            <h1 data-lang="Home.setction_01_title" class="animation">
+              <span class="blind"
+                >안전하게 자산을 관리하고, 게임을 즐기고, 토근을 획득하고.</span
+              >
+            </h1>
+            <p>
+              <strong data-lang="Home.setction_01_emphasize">
+                <span class="blind">다양하고 검증된 높은 퀄리티의 게임.</span>
+              </strong>
+              <span data-lang="Home.setction_01_desc">
+                <span class="blind">
+                  App 형태의 게임들과 비교해도 전혀 손색이 없는 높은 퀄리티의
+                  DApp 게임을 제공합니다. 게임을 플레이하고 보상으로 획득한
+                  디지털 자산을 지갑에서 한꺼번에 관리할 수 있습니다.
+                </span>
               </span>
-            </span>
-          </p>
+            </p>
+            <div class="download_btn-wrap">
+              <div>
+                <a
+                  href="javascript:;"
+                  class="new__link google"
+                  data-store-url="https://wemixwallet.onelink.me/JaMW/maininstall"
+                  data-store-web-url="https://wemixwallet.onelink.me/JaMW/maininstall"
+                >
+                  <span data-lang="Global.google_play"></span>
+                  <span class="blind">Google Play 다운로드</span>
+                </a>
+              </div>
+              <div>
+                <a
+                  href="javascript:;"
+                  class="new__link apple"
+                  data-store-url="https://itunes.apple.com/app/id1531057807"
+                  data-store-web-url="https://itunes.apple.com/app/id1531057807"
+                >
+                  <span class="blind">App Store 다운로드</span>
+                  <span data-lang="Global.app_store"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="new__image-set">
+            <img
+              class="new__image-set"
+              src="./assets/images/img01.png"
+              alt=""
+            />
+          </div>
         </div>
-        <div class="property__image-set">
-            <img src="./assets/images/img02.png" alt="">
-        </div>
-      </div>
-    </section>
-    
-    <!-- section 03 -->
-    <section class="exchange__section">
-      <div class="exchange__group">
-        <div class="exchange__content-set">
-          <h1 data-lang="Home.setction_03_title"><span class="blind">위믹스 지갑을 사용하면 좋은 이유.</span></h1>
-          <p>
-            <strong data-lang="Home.setction_03_emphasize">
-              <span class="blind">자산 이동 교환을 순식간에 전송.</span>
-            </strong>
-            <span data-lang="Home.setction_03_desc">
-              <span class="blind">
-                위믹스에서는 대규모 트랜잭션을 엄청난 속도로 신속하고 원활하게 처리하는 서비스 환경을 제공합니다.
-                이 놀라운 속도를 경험하려면 지금 지갑을 만드세요.
-                패스워드를 한번 만 입력하면 그 즉시 지갑이 생성됩니다.  
+      </section>
+
+      <!-- section 02 -->
+      <section class="property__section">
+        <div class="property__group">
+          <div class="property__content-set">
+            <h1 data-lang="Home.setction_02_title">
+              <span class="blind"
+                >점점 늘어나는 디지털 자산을 관리하고 싶다면?</span
+              >
+            </h1>
+            <p>
+              <strong data-lang="Home.setction_02_emphasize">
+                <span class="blind">블록체인 자산 보관과 거래.</span>
+              </strong>
+              <span data-lang="Home.setction_02_desc">
+                <span class="blind">
+                  위믹스에서는 안전한 자산 이동과 교환 경험을 제공하죠. 게임을
+                  플레이만으로 토큰을 획득합니다. 점점 자산이 늘어난다는 얘기죠.
+                  늘어난 자산으로 콘텐츠 구매하거나 교환 또는 판매하여 자산을
+                  늘려보세요.
+                </span>
               </span>
-            </span>
-          </p>
+            </p>
+          </div>
+          <div class="property__image-set">
+            <img src="./assets/images/img02.png" alt="" />
+          </div>
         </div>
-        <div class="exchange__image-set">
-            <img src="./assets/images/img03.svg" alt="">
+      </section>
+
+      <!-- section 03 -->
+      <section class="exchange__section">
+        <div class="exchange__group">
+          <div class="exchange__content-set">
+            <h1 data-lang="Home.setction_03_title">
+              <span class="blind">위믹스 지갑을 사용하면 좋은 이유.</span>
+            </h1>
+            <p>
+              <strong data-lang="Home.setction_03_emphasize">
+                <span class="blind">자산 이동 교환을 순식간에 전송.</span>
+              </strong>
+              <span data-lang="Home.setction_03_desc">
+                <span class="blind">
+                  위믹스에서는 대규모 트랜잭션을 엄청난 속도로 신속하고 원활하게
+                  처리하는 서비스 환경을 제공합니다. 이 놀라운 속도를 경험하려면
+                  지금 지갑을 만드세요. 패스워드를 한번 만 입력하면 그 즉시
+                  지갑이 생성됩니다.
+                </span>
+              </span>
+            </p>
+          </div>
+          <div class="exchange__image-set">
+            <img src="./assets/images/img03.svg" alt="" />
+          </div>
         </div>
-      </div>
-    </section>
-  
+      </section>
+
       <!-- section 04 -->
       <section class="down__section">
-      <div class="down__group">
-        <div class="down__content-set">
-          <a href="javascript:;" class="down__link google" data-lang="Global.google_play" data-store-url="https://wemixwallet.onelink.me/JaMW/maininstall" data-store-web-url="https://wemixwallet.onelink.me/JaMW/maininstall"><span class="blind">Google Play 다운로드</span></a>
-          <!-- <a href="javascript:;" class="down__link apple" data-lang="Global.app_store" data-store-url="https://itunes.apple.com/app/id1531057807" data-store-web-url="https://itunes.apple.com/app/id1531057807"><span class="blind">App Store 다운로드</span></a> -->
+        <div class="down__group">
+          <div class="down__content-set">
+            <a
+              href="javascript:;"
+              class="down__link google"
+              data-lang="Global.google_play"
+              data-store-url="https://wemixwallet.onelink.me/JaMW/maininstall"
+              data-store-web-url="https://wemixwallet.onelink.me/JaMW/maininstall"
+              ><span class="blind">Google Play 다운로드</span></a
+            >
+            <a
+              href="javascript:;"
+              class="down__link apple"
+              data-lang="Global.app_store"
+              data-store-url="https://itunes.apple.com/app/id1531057807"
+              data-store-web-url="https://itunes.apple.com/app/id1531057807"
+              ><span class="blind">App Store 다운로드</span></a
+            >
+          </div>
+          <div class="down__soon-set">
+            <span data-lang="Home.coming_soon_title"
+              ><span class="blind"
+                >위믹스 지갑 웹 서비스는 곧 돌아오겠습니다.</span
+              ></span
+            >
+            <p data-lang="Home.coming_soon_desc">
+              <span class="blind">현재 새단장 중. 조만간 뵙겠습니다.</span>
+            </p>
+          </div>
         </div>
-        <div class="down__soon-set">
-          <span data-lang="Home.coming_soon_title"><span class="blind">위믹스 지갑 웹 서비스는 곧 돌아오겠습니다.</span></span>
-          <p data-lang="Home.coming_soon_desc"><span class="blind">현재 새단장 중. 조만간 뵙겠습니다.</span></p>
+      </section>
+    </main>
+
+    <!--=====================================-->
+    <!-- footer -->
+    <!--=====================================-->
+    <footer>
+      <div class="footer">
+        <div class="footer__set">
+          <div class="footer__group">
+            <div class="footer__about">
+              <div class="footer__about footer__about-link">
+                <a
+                  href="https://wemixnetwork.com/about"
+                  target="_blank"
+                  data-lang="Footer.company_name"
+                  ><span class="blind">ABOUT WEMADE TREE</span></a
+                >
+                <a
+                  href="mailto:contact_wt@wemade.com"
+                  data-lang="Footer.contact_us"
+                  ><span class="blind">CONTACT US</span></a
+                >
+                <a
+                  href="https://wemixnetwork.com/terms"
+                  target="_blank"
+                  data-lang="Footer.terms_of_use"
+                  ><span class="blind">TERMS OF SERVICE</span></a
+                >
+                <a
+                  href="https://wemixnetwork.com/privacy"
+                  target="_blank"
+                  data-lang="Footer.privacy_policy"
+                  ><span class="blind">PRIVACY POLICY</span></a
+                >
+              </div>
+            </div>
+            <div class="footer__social">
+              <a
+                href="https://t.me/WemixNetworkAnnounce"
+                class="footer__social-telegram"
+                target="_blank"
+              >
+                <i class="fab fa-telegram-plane"></i>
+              </a>
+              <a
+                href="https://medium.com/@WemixNetwork"
+                class="footer__social-medium"
+                target="_blank"
+              >
+                <i class="fab fa-medium-m"></i>
+              </a>
+            </div>
+            <div class="footer__info">
+              <div class="footer__address">
+                <p data-lang="Footer.company_plt">
+                  <span class="blind">Wemade Tree Pte, Ltd</span>
+                </p>
+                <p data-lang="Footer.copyright">
+                  <span class="blind"
+                    >Copyright ⓒ 2018 Wemade Tree, All rights Reserved</span
+                  >
+                </p>
+              </div>
+              <div class="footer__copyright">
+                <span data-lang="Global.serviceName"
+                  ><span class="blind">ⓒ WEMIX</span></span
+                >
+                <img src="./assets/images/ico_symbol.png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
+    </footer>
+  </body>
 
-  </main>
+  <script type="text/javascript" src="./assets/js/lib/wemix.core.js"></script>
+  <script
+    type="text/javascript"
+    src="./assets/js/lib/wemix.svc.main.js"
+  ></script>
 
-  <!--=====================================-->
-  <!-- footer -->
-  <!--=====================================-->
-  <footer>
-    <div class="footer">
-      <div class="footer__set">
-        <div class="footer__group">
-          <div class="footer__about">
-            <div class="footer__about footer__about-link">
-              <a href="https://wemixnetwork.com/about" target="_blank" data-lang="Footer.company_name"><span class="blind">ABOUT WEMADE TREE</span></a>
-              <a href="mailto:contact_wt@wemade.com" data-lang="Footer.contact_us"><span class="blind">CONTACT US</span></a>
-              <a href="https://wemixnetwork.com/terms" target="_blank" data-lang="Footer.terms_of_use"><span class="blind">TERMS OF SERVICE</span></a>
-              <a href="https://wemixnetwork.com/privacy" target="_blank" data-lang="Footer.privacy_policy"><span class="blind">PRIVACY POLICY</span></a>
-            </div>
-          </div>
-          <div class="footer__social">
-            <a href="https://t.me/WemixNetworkAnnounce" class="footer__social-telegram" target="_blank">
-              <i class="fab fa-telegram-plane"></i>
-            </a>
-            <a href="https://medium.com/@WemixNetwork" class="footer__social-medium" target="_blank">
-              <i class="fab fa-medium-m"></i>
-            </a>
-          </div>
-          <div class="footer__info">
-            <div class="footer__address">
-              <p data-lang="Footer.company_plt"><span class="blind">Wemade Tree Pte, Ltd</span></p>
-              <p data-lang="Footer.copyright"><span class="blind">Copyright ⓒ 2018 Wemade Tree, All rights Reserved</span></p>
-            </div>
-            <div class="footer__copyright">
-              <span data-lang="Global.serviceName"><span class="blind">ⓒ WEMIX</span></span>
-              <img src="./assets/images/ico_symbol.png" alt="">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</body>
-
-<script type='text/javascript' src='./assets/js/lib/wemix.core.js'></script>
-<script type='text/javascript' src='./assets/js/lib/wemix.svc.main.js'></script>
-
-<script>
- 
-  $(window).on("load",function(){
-      
-    new WEMIX.Svc.Main();
-      
-  });
-
-</script>
-
+  <script>
+    $(window).on("load", function () {
+      new WEMIX.Svc.Main();
+    });
+  </script>
 </html>
